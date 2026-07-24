@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>経歴等まとめ</title>
+
+<style>
+    /* ================================
+       全体
+    ================================= */
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 40px 20px;
+
+        background: #f5f7fa;
+        color: #333;
+
+        font-family:
+            -apple-system,
+            BlinkMacSystemFont,
+            "Segoe UI",
+            "Noto Sans JP",
+            sans-serif;
+
+        line-height: 1.8;
+    }
+
+    main {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+
+    /* ================================
+       タイトル
+    ================================= */
+
+    h1 {
+        margin: 0 auto 50px;
+
+        max-width: 1000px;
+
+        padding-bottom: 15px;
+
+        color: #222;
+        font-size: 2.2rem;
+
+        border-bottom: 3px solid #333;
+    }
+
+
+    /* ================================
+       セクション
+    ================================= */
+
+    h2 {
+        margin-top: 60px;
+        margin-bottom: 25px;
+        padding: 12px 20px;
+
+        background: #222;
+        color: white;
+
+        font-size: 1.5rem;
+
+        border-radius: 6px;
+    }
+
+    h3 {
+        margin-top: 35px;
+        margin-bottom: 15px;
+
+        padding-left: 12px;
+
+        color: #444;
+        font-size: 1.25rem;
+
+        border-left: 5px solid #555;
+    }
+
+    h4 {
+        margin-top: 25px;
+        margin-bottom: 10px;
+
+        color: #666;
+    }
+
+
+    /* ================================
+       リスト
+    ================================= */
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        list-style: none;
+    }
+
+
+    /* ================================
+       スキル・制作物カード
+    ================================= */
+
+    li {
+        margin-bottom: 20px;
+        padding: 25px 30px;
+
+        background: white;
+
+        border: 1px solid #e2e5e9;
+        border-radius: 10px;
+
+        box-shadow:
+            0 3px 10px rgba(0, 0, 0, 0.05);
+
+        transition:
+            transform 0.2s ease,
+            box-shadow 0.2s ease;
+    }
+
+    li:hover {
+        transform: translateY(-3px);
+
+        box-shadow:
+            0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+
+    /* ================================
+       スキル名・制作物名
+    ================================= */
+
+    .skill-name,
+    li > strong {
+        display: inline-block;
+
+        margin-right: 15px;
+
+        color: #222;
+        font-size: 1.2rem;
+    }
+
+
+    /* ================================
+       経験年数
+    ================================= */
+
+    .skill-name + span {
+        display: inline-block;
+
+        padding: 3px 10px;
+
+        background: #eef1f4;
+        color: #555;
+
+        font-size: 0.85rem;
+
+        border-radius: 20px;
+    }
+
+
+    /* ================================
+       説明文
+    ================================= */
+
+    p {
+        margin: 12px 0 0;
+
+        color: #555;
+    }
+
+
+    /* ================================
+       資格
+    ================================= */
+
+    h4 + ul li {
+        margin-bottom: 8px;
+        padding: 12px 20px;
+
+        border-left: 4px solid #555;
+        border-radius: 4px;
+
+        box-shadow: none;
+    }
+
+    h4 + ul li:hover {
+        transform: none;
+
+        box-shadow: none;
+    }
+
+
+    /* ================================
+       リンク
+    ================================= */
+
+    a {
+        color: #2563eb;
+        font-weight: 600;
+
+        text-decoration: none;
+
+        transition: color 0.2s ease;
+    }
+
+    a:hover {
+        color: #1d4ed8;
+
+        text-decoration: underline;
+    }
+
+
+    /* ================================
+       レスポンシブ対応
+    ================================= */
+
+    @media (max-width: 600px) {
+
+        body {
+            padding: 25px 15px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+        }
+
+        li {
+            padding: 20px;
+        }
+
+        .skill-name,
+        li > strong {
+            display: block;
+
+            margin-bottom: 5px;
+        }
+    }
+</style>
+
+</head>
+
+<body>
+
+<h1>就活用ポートフォリオ</h1>
+
+<main>
+
+    <!-- ================================
+         スキル
+    ================================= -->
+
+    <section>
+        <h2>スキル</h2>
+
+        <h3>言語</h3>
+
+        <ul>
+
+            <li>
+                <strong class="skill-name">Java</strong>
+                <span>実務経験：3か月</span>
+
+                <p>
+                    新卒入社した会社で開発に使用。
+                    Javaを用いたバックエンド開発およびSQLを使用したデータベース操作を経験。
+                </p>
+            </li>
+
+
+            <li>
+                <strong class="skill-name">SQL</strong>
+                <span>実務経験：3か月</span>
+
+                <p>
+                    同上。Oracle Silver SQL 2019取得済。
+                </p>
+
+                <p>
+                    ほか、個人サイト（後述）の制作にMySQLをLaravel経由で使用。
+                </p>
+            </li>
+
+
+            <li>
+                <strong class="skill-name">Python</strong>
+                <span>個人開発：4年以上</span>
+
+                <p>
+                    個人開発及び大学の卒業研究で使用。
+                </p>
+
+                <p>
+                    制作物はAIチャットボット、Twitch配信支援用botなど。
+                </p>
+
+                <p>
+                    卒業研究では水道スマートメータの水使用データ分析に使用。
+                </p>
+            </li>
+
+
+            <li>
+                <strong class="skill-name">PHP</strong>
+                <span>個人開発：3カ月</span>
+
+                <p>
+                    Laravelを使用したWeb APIの開発に使用。
+                    MySQLとのデータ連携やCRUD処理、バリデーションなどを実装。
+                </p>
+            </li>
+
+
+            <li>
+                <strong class="skill-name">HTML</strong>
+                <span>個人開発：3カ月、実務経験：3カ月</span>
+
+                <p>
+                    同上。
+                </p>
+            </li>
+
+        </ul>
+
+
+        <h3>フレームワーク</h3>
+
+        <ul>
+
+            <li>
+                <strong class="skill-name">Laravel</strong>
+                <span>個人開発：3カ月</span>
+
+                <p>
+                    個人サイトのバックエンドAPI開発に使用。
+                    配信記録や掲示板のデータ管理、CRUD処理、
+                    バリデーションなどを実装。
+                </p>
+            </li>
+
+
+            <li>
+                <strong class="skill-name">Vue.js</strong>
+                <span>個人開発：3カ月</span>
+
+                <p>
+                    個人サイトのフロントエンド開発に使用。
+                    コンポーネント指向のUI開発やフォーム処理などを実装。
+                </p>
+            </li>
+
+
+            <li>
+                <strong class="skill-name">Nuxt</strong>
+                <span>個人開発：3カ月</span>
+
+                <p>
+                    Vue.jsをベースとしたWebアプリケーション開発に使用。
+                    Nuxtのサーバー機能を利用したAPIエンドポイントや、
+                    Laravel APIとの連携を実装。
+                </p>
+            </li>
+
+        </ul>
+
+
+        <h3>資格</h3>
+
+        <h4>取得済み</h4>
+
+        <ul>
+            <li>基本情報技術者試験</li>
+            <li>Java Silver</li>
+            <li>Silver SQL 2019</li>
+        </ul>
+
+
+        <h4>今後取得を検討している資格</h4>
+
+        <ul>
+            <li>LPIC</li>
+            <li>AWS認定資格</li>
+            <li>応用情報技術者試験（廃止予定のため、いずれかの後継資格）</li>
+        </ul>
+
+    </section>
+
+
+    <!-- ================================
+         制作物
+    ================================= -->
+
+    <section>
+
+        <h2>制作物</h2>
+
+        <ul>
+
+            <li>
+
+                <strong>Discord用LLMチャットボット</strong>
+
+                <p>
+                    制作時期：2021年ごろ
+                </p>
+
+                <p>
+                    技術：Python 3 / Discord API / Transformers / PyTorch
+                </p>
+
+                <p>
+                    Discord上で動作するLLMチャットボットを開発。
+                </p>
+
+                <p>
+                    2021年当時に公開されていたEleutherAIのGPT-Neo 1.3Bを、
+                    Hugging Face TransformersおよびPyTorchを利用して自環境で動作させ、
+                    Discord Botとして統合しました。
+                </p>
+
+                <p>
+                    当時のLLMエコシステムを調査し、公開モデルを取得して推論環境を構築し、
+                    外部サービスに依存せずにチャットボットとして利用できる形に実装しました。
+                </p>
+
+            </li>
+
+
+            <li>
+
+                <strong>Twitch配信支援用Bot</strong>
+
+                <p>
+                    制作時期：2023年ごろ作成、2025年に大幅改修
+                </p>
+
+                <p>
+                    技術：Python 3 / Twitch API / OBS WebSocket / LLM
+                </p>
+
+                <p>
+                    Twitch APIやEventSubを利用した配信イベントの取得、
+                    OBS WebSocketを利用した配信画面の制御、
+                    LLM APIを利用したチャット翻訳など、
+                    複数の外部API・サービスを組み合わせて開発しています。
+                </p>
+
+                <p>
+                    <strong>詳細</strong>：
+                    <a href="https://dnevnik-slacka.blogspot.com/2026/02/cbotdiscordinebot2readmemd.html">
+                        制作記事・README
+                    </a>
+                </p>
+
+            </li>
+
+
+            <li>
+
+                <strong>個人サイト（配信記録カレンダー・掲示板）</strong>
+
+                <p>
+                    制作時期：2026年
+                </p>
+
+                <p>
+                    技術：Vue / Nuxt / Laravel / PHP / MySQL / Nginx
+                </p>
+
+                <p>
+                    Twitch配信の記録を管理するカレンダーと、
+                    5ch風の掲示板機能を備えた個人サイトを開発。
+                    Nuxtをフロントエンド、LaravelをバックエンドAPIとして使用しています。
+                </p>
+
+                <p>
+                    <strong>サイト</strong>：
+                    <a href="https://discordine-slack.f5.si/">
+                        個人サイト
+                    </a>
+                </p>
+
+                <p>
+                    <strong>詳細</strong>：
+                    <a href="https://dnevnik-slacka.blogspot.com/2026/06/blog-post_19.html">
+                        制作記事
+                    </a>
+                </p>
+
+            </li>
+
+        </ul>
+
+    </section>
+
+</main>
+
+</body>
+</html>
